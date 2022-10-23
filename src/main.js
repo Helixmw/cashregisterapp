@@ -35,14 +35,34 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   routes: [
     {
-      path: '/',
+      path: '/cashregisterapp',
       component: Pos,
       name: 'pos'
     },
     {
-      path: '*',
+      path: '/sales',
       component: NotFound,
-    }
+    },
+    {
+      path: '/inventory',
+      component: NotFound,
+    },
+    {
+      path: '/reports',
+      component: NotFound,
+    },
+    {
+      path: '/user',
+      component: NotFound,
+    },
+    {
+      path: '/logout',
+      component: NotFound,
+    },
+    {
+      path: '/help',
+      component: NotFound,
+    },
   ],
   mode: 'history'
 });

@@ -3,7 +3,7 @@
         <div class="message">
         <div class="large-text">Whoops!</div>
         <div class="notfound">It seems this page is unavailable.</div>
-        <div class="main-app"><router-link to="/" class="link">Back to Main App</router-link></div>
+        <div class="main-app"><router-link to="/cashregisterapp" class="link">Back to Main App</router-link></div>
         </div>
     </div>
 </template>
