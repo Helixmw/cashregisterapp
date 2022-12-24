@@ -68,8 +68,8 @@ export default {
     white-space: nowrap;
 }
 .bttn{
-    border:1px #f1550d solid;
-    color:#f1550d;
+    border:1px var(--main-color) solid;
+    color:var(--main-color);
     height:2em;
     padding-top:0.1em;
     cursor:pointer;

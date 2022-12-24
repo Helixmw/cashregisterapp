@@ -19,8 +19,8 @@
 }
 .link{
     text-decoration:none;
-    color:#f1550d;
-    border:2px solid #f1550d;
+    color:var(--main-color);
+    border:2px solid var(--main-color);
     border-radius:3px;
     padding:0.5rem;
     font-size:1.1rem;
@@ -28,7 +28,7 @@
 }
 
 .link:hover{
-    background-color:#f1550d;
+    background-color:var(--main-color);
     color:white;
 }
 .large-text{
@@ -38,7 +38,7 @@
 }
 
 .notfound{
-    color:#f1550d;
+    color:var(--main-color);
     font-weight:bold;
     font-size:2rem;
 }

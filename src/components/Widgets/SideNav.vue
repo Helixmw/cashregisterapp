@@ -34,8 +34,26 @@ export default {
 
 
 .side{
-    background-color: #f1550d;
+    background-color: var(--main-color);
     height:100vh;
+    opacity:0;
+    transform:translateX(-20rem);
+    animation-name:slide;
+    animation-duration:0.4s;
+    animation-delay:0.7s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes slide{
+    from{
+        opacity:0;
+        transform:translateX(-20rem);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0rem);
+    }
 }
 
 .box1{
@@ -56,7 +74,7 @@ export default {
     text-decoration: none;
     font-weight: bold;
     font-size:1.1rem;
-    color:#efff16
+    color:#ffffff
     
 }
 

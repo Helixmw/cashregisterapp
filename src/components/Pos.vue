@@ -7,7 +7,6 @@
             <Options/>
         </div>
         </div>
-
     </div>
     </div>
 </template>
@@ -30,7 +29,8 @@
 export default
 {
    components:{
-       SideNav,Calculator,Options
+       SideNav,Calculator,
+       Options
    }
 }
 </script>

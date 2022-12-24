@@ -22,11 +22,11 @@
         </div>
         <div class="container-1">
             <div class="button" style="width:12em;"  @click="zero()"><h1>0</h1></div>
-            <div class="button" style="background-color:#d1d1d1;color:#727171;" @click="clear()"><h1>C</h1></div>      
+            <div class="button" style="background-color:var(--dim-grey);color:var(--text-grey);" @click="clear()"><h1>C</h1></div>      
         </div>
 
         </div>
-    <div class="right"><div class="fields"><input type="text" class="form-control" v-model="paid" @keyup="filterValues(paid)"></div>
+    <div class="right"><div class="fields"><input type="text" class="form-control input" v-model="paid" @keyup="filterValues(paid)"></div>
     <div class="set">
         <div class="set1">Total:</div>
         <div class="set2">{{cum.toLocaleString("en-US")}}</div>
@@ -49,7 +49,7 @@
         <div class="searcharea">
             <div class="container-3">
            
-    <b-dropdown id="dropdown-dropright" dropright text="Item Categories" variant="default" class="m-2" style="background-color:#fa8d5b;color:white;height:2.9em;">
+    <b-dropdown id="dropdown-dropright" dropright text="Item Categories" variant="default" class="m-2" style="background-color:var(--main-color);color:var(--white);height:2.9em;">
     <b-dropdown-item @click="itemsSearch(men)">Men's clothes</b-dropdown-item>
     <b-dropdown-item @click="itemsSearch(women)">Momen's clothes</b-dropdown-item>
     <b-dropdown-item @click="itemsSearch(jewelery)">Jewelery</b-dropdown-item>
@@ -299,8 +299,13 @@ export default {
 </script>
 <style scoped>
 
+.input{
+    background:var(--background);
+    color:var(--foreground);
+}
+
 .cal{
-    background-color: #d1d1d1;
+    background-color: var(--dim-grey);
     height:2.1em;
     cursor:pointer;
     text-align: center;
@@ -372,7 +377,7 @@ export default {
 }
 
 .side{
-    background-color: #f1f0f0;
+    background-color: var(--light-grey);
     height:29.4em;
     margin:2%;
     padding:2%;
@@ -380,7 +385,7 @@ export default {
 }
 
 .button{
-    background-color:#f1550d;
+    background-color:var(--main-color);
     height:6em;
     width:6em;
     text-align:center;

@@ -13,7 +13,7 @@
               <div class="box1 itemname">{{item.name}}</div>
               <div class="box2">{{item.price}}</div>
               <div class="box3">
-    <b-form-spinbutton id="sb-inline"  v-model="item.quant" style="height:2em;border:0px;" inline></b-form-spinbutton></div>
+    <b-form-spinbutton id="sb-inline"  v-model="item.quant" style="height:2em;border:0px;background:var(--light-grey);color:var(--foreground);" inline></b-form-spinbutton></div>
               <div class="box4"><div class="bttn" @click="addToCart(item.id,item.name,item.price,item.quant,item.category,item.brand)" ><center>Add</center></div></div>
           </div>
       </div>
@@ -124,6 +124,11 @@ export default {
 
 <style scoped>
 
+#card{
+    background:var(--background)!important;
+}
+
+
 .itemname{
     overflow: hidden;
     text-overflow: ellipsis;
@@ -140,7 +145,7 @@ export default {
 }
 
 .thebtn{
-    color:#f1550d;
+    color:var(--main-color);
     cursor: pointer;
     
 }
@@ -169,8 +174,8 @@ export default {
 
 
 .bttn{
-    border:1px #f1550d solid;
-    color:#f1550d;
+    border:1px var(--main-color) solid;
+    color: var(--main-color);
     height:2em;
     padding-top:0.1em;
     cursor:pointer;
